@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_name: MyString
+  logo: 
+  city: MyString
+  email: MyString
+  address: MyString
+  contact_number: 1
+  product_name: MyString
+  item_code: 1
+  regular_price: 1
+  sale_price: MyString
+  integer: MyString
+  quantity: 1
+  mfg_date: 2020-09-23
+  exp_date: 2020-09-23
+  catagory: 1
+  product_description: MyString
+  agreement: false
+
+two:
+  company_name: MyString
+  logo: 
+  city: MyString
+  email: MyString
+  address: MyString
+  contact_number: 1
+  product_name: MyString
+  item_code: 1
+  regular_price: 1
+  sale_price: MyString
+  integer: MyString
+  quantity: 1
+  mfg_date: 2020-09-23
+  exp_date: 2020-09-23
+  catagory: 1
+  product_description: MyString
+  agreement: false

@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+         Product Details
+         <span class="float-right"> <strong>Item Code:</strong> <%= @product.item_code %></span>
+    </div>
+     <div class="card-body">
+        <div class="row mb-4">
+          <div class="col-sm-6">
+            <h6 class="mb-3">Company Details:</h6>
+        <div>
+            <strong><%= @product.company_name %></strong>
+       </div>
+        <div><%= @product.city %></div>
+            <div><%= @product.email %></div>
+               <div><%= @product.address %></div>
+                <div><%= @product.contact_number %></div>
+         </div>
+
+   <div class="col-sm-6">
+       <div class ="form-group">
+            <% if(@product.image.attached?) %>
+              <%= image_tag @product.image, style: 'display: block;  width: 30%;' %> 
+          <% end %>
+      </div>
+   <div>
+    <strong>Feed back</strong>
+</div>
+    <div><%= @product.feedbacks.first.name %></div>
+    <div><%= @product.feedbacks.first.body %></div>
+</div>
+</div>
+</div>
+
+<div class="table-responsive-sm">
+   <table class="table table-striped">
+      <tbody>
+         <tr>
+           <td class="left">Product Name</td>
+           <td class="right"><%= @product.product_name%></td>
+        </tr>
+         <tr>
+           <td class="left">Retails Price</td>
+           <td class="right"><%= @product.regular_price%></td>
+        </tr>
+         <tr>
+            <td class="left">Sale Price</td>
+            <td class="right"><%= @product.sale_price%></td>
+        </tr>
+        <tr>
+            <td class="left">Quantity</td>
+            <td class="right"><%= @product.quantity%></td>
+       </tr>
+        <tr>
+           <td class="left">MFG Date</td>
+           <td class="right"><%= @product.mfg_date%></td>
+       </tr>
+        <tr>
+           <td class="left">EXP Date</td>
+           <td class="right"><%= @product.exp_date%></td>
+       </tr>
+         <tr>
+           <td class="left">Catagory</td>
+           <td class="right"><%= @product.catagory%></td>
+       </tr>
+
+  </tbody>
+</table>
+</div>
+     <div class="row">
+        <div class="col-lg-4 col-sm-5"></div>
+    </div>
+
+

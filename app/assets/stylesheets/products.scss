@@ -1,0 +1,22 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+h1 {
+    text-align:center; 
+    color: #050505;
+    font-family:verdana;
+  }
+
+  label {
+   width:160px;
+    display: inline-block;
+    text-align: start;
+  } 
+  
+  #passwordHelpBlock {
+    font-size: x-small;
+    display: block;
+    color: red;
+    image-resolution: "8";
+  }
